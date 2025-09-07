@@ -1,0 +1,64 @@
+HTML Emmets / shortcuts
+========================
+https://docs.emmet.io/cheat-sheet/
+
+! 
+ol>li*5{Car-$}
+select>option*10{Country-$}
+table>tr*10>td*5{Data-$}
+
+
+How to use CSS in HTML Files
+=============================
+1. inline CSS ( style attribute ) ( Restricted to 1 Element )
+    <h3 style="color:blueviolet">List of Cars:</h3>
+2. internal CSS ( style tag ) ( Restricted to 1 HTML page )
+   <style></style>
+3. external 
+    a. write css code in a separate .css file
+    b. include that css file in HTML file using <link>
+
+
+How to use Bootstrap in HTML Files
+==================================
+-CSS Library : Pre-defined css classnames, Responsiveness
+-Maintained by twitter
+-Bootstrap 5 is the latest version
+-Official bootstrap link :https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+Add CDN link to the <head></head> of HTML file
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+Types Of Javascript
+===================
+1. Internal javascript <script></script>  Page level
+2. External Javascript ( separate .js file)
+
+
+
+How to write and execute Javascript code
+========================================
+1. Browser (FrontEnd Development)
+    a. create a javascript file with some javascript code (abc.js)
+    b. include that javascript file into HTML File
+       <script src="./abc.js"></script>
+    c. open HTML file in browser ( alt + b )
+
+2. NodeJS ( BackEnd Development )
+   a. create a javascript file with some javascript code (abc.js)
+   b. run the javascript file with the below command 
+      node <filename>.js ( make sure nodejs is installed)
+
+Note : Every Javascript code that runs on browser might not run in nodeJS , and vice versa
+
+
+
+Most Commonly used javascript objects/classes
+=============================================
+console : log(), warn(), error(), table() , dir(), time(), timeEnd()
+window : alert(), prompt(), confirm(), print()
+document : write(), getElementById()
+Math : max(), min(), sqrt(), cbrt()
+Array : push(), pop(), slice()
+Object : keys(), values()
