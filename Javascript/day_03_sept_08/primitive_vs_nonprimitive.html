@@ -1,0 +1,19 @@
+<script>
+    let str = 'hello'; // strings are immutable
+    str[1] = 'f';
+    str[2] = 'm';
+    console.log(str);
+
+    let arr = [10, 20, 30, 40, 50]; // arrays are mutable
+    arr[1] = 25;
+    arr[2] = 35;
+    console.log(arr);
+
+
+    console.log(10 == 10); // true
+    console.log('virat' == 'virat'); // true
+    console.log(true == true); // true
+
+    console.log({} == {}); // false , address comparision
+    console.log([10, 20] == [10, 20]); // false , address comparision
+</script>

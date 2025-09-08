@@ -54,11 +54,3 @@ Note : Every Javascript code that runs on browser might not run in nodeJS , and 
 
 
 
-Most Commonly used javascript objects/classes
-=============================================
-console : log(), warn(), error(), table() , dir(), time(), timeEnd()
-window : alert(), prompt(), confirm(), print()
-document : write(), getElementById()
-Math : max(), min(), sqrt(), cbrt()
-Array : push(), pop(), slice()
-Object : keys(), values()
