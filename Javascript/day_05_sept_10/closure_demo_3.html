@@ -5,12 +5,17 @@
     <button onclick="sayHi()">sayHi</button>
     <h2>Count is: <span>0</span></h2>
     <script>
-        let count = 0; // Count becomes global
-        function increment() {
-            // let count = 0; // Count gets initialized to 0 everytime increment is called
-            count++;
-            document.querySelector('span').innerText = count;
+        function initializeCounter() {
+            let count = 0;
+
+            return function () {
+                count++;
+                document.querySelector('span').innerText = count;
+            }
         }
+        let increment = initializeCounter();
+        console.dir(increment);
+
         function sayHi() {
             console.log('Hiiiii')
             count++;
