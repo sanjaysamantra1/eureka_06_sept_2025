@@ -1,0 +1,75 @@
+
+Functions 
+=========
+-function is a block of code/statements designed to perform a particular task.
+-function is executed only when that gets invoked/called.
+-function is defined with the function keyword, followed by a name, followed by parentheses ().
+-The code to be executed(function body), by the function, is placed inside curly brackets: {}
+-Function parameters are listed inside the parentheses () in the function definition.
+-Function arguments are the values received by the function when it is invoked.
+-Inside the function, the arguments (the parameters) behave as local variables.
+
+1. pre-defined (alert(),prompt(),confirm(),max(),min(),sqrt(),cbrt())
+	already written, we are just using them
+2. user-defined
+	we have to write,and we will use them
+   
+   a. function declaration (named function)
+   b. function expression(anonymous)
+   c. self invoked ( IIFE- Immediately Invoked Function Expression)
+   d. arrow function (ES - 6)(2015)
+
+
+   Function declaration vs Expression
+   ===================================
+   1. Function declarations are named, function expressions are anonymous
+   2. Function declarations are hoisted, function expressions are not hoisted
+
+
+
+-'this' : refers the current object where the code is being executed
+
+
+Arrow Function and 'this' Keyword
+----------------------------------
+-'this' value inside a regular function is dynamic and depends on the context in which it is called.
+-Arrow function doesn't have its own 'this' binding
+'this' inside the arrow function is bound lexically and equals to 'this' where the function is declared.
+-lexical context means that arrow function uses 'this' from the code that contains the arrow function.
+-Regular function ( this = how the function is invoked/who invoked )
+-Arrow function( this = where the function is declared )
+
+
+Arrow Function Limitations
+--------------------------
+-arrow functions should not be used inside object literals.
+-arrow function should be avoided when , 'this' is expected to be dynamic
+
+
+Arrow Function Benefits
+-----------------------
+-Concise syntax
+-Implicit return
+-Lexical 'this' Binding
+-no arguments object(pre-defined keyword)
+-ideal for callbacks
+-good for small functions
+-static 'this' (this doesn't change)
+
+
+function closure
+================
+-A closure is a concept where an inner function has access to its outer function's variables even after the outer function's execution is Completed/Closed.
+
+-When an inner function accesses any data from the outer function, a 'closure' scope gets attached to the inner function. hence inner function can access outer function data.
+
+-When the outer function execution completes, you’d expect all its variables to be no longer accessible. However, if the inner function uses variables from the outer function, those variables remain accessible.
+
+-The inner function retains access to the outer function’s scope, because the inner function ‘remembers’ the environment in which it was created.
+
+-Ex: Counter , Data Encapsulation
+
+
+Note:
+-Closure scope is only for inner functions and not for outer functions
+-closure scope is not attached for every inner functions, its attached only if the ineer function accesses outer function variable

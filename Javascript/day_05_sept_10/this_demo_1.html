@@ -1,0 +1,13 @@
+<script>
+    console.log(this);  // this = window
+
+    function regularFunc() {
+        console.log('Regular func', this); // window : how/where the function is invoked
+    }
+    regularFunc();
+
+    let arrowFunc = () => {
+        console.log('Arrow func', this); // window : where the function is written
+    }
+    arrowFunc();
+</script>

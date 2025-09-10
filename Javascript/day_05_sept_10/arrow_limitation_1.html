@@ -1,0 +1,15 @@
+<script>
+    // Global Scope
+    let user = { // object literals
+        firstName: 'Virat',
+        lastName: 'Kohli',
+        fullName1: function () { // Regular : this - how the function is called
+            console.log('regular: ', this.firstName, this.lastName); // this = user
+        },
+        fullName2: () => { // Arrow : this - where the function is written, outer scope
+            console.log('Arrow: ', this.firstName, this.lastName); // this = window
+        }
+    }
+    user.fullName1();
+    user.fullName2();
+</script>

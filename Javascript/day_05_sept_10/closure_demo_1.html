@@ -1,0 +1,16 @@
+<script>
+    var a = 10;
+    let b = 20;
+    function outer() {
+        const c = 30;
+
+        function inner() {
+            var d = 40;
+            console.log(a, b,  d)
+        }
+        inner();
+        console.dir(inner)
+    }
+    outer();
+    console.dir(outer)
+</script>
