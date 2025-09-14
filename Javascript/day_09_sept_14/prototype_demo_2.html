@@ -1,0 +1,30 @@
+<script>
+    var a = 10; // global
+
+    class Student {
+        constructor(roll, name, course) { // constructor 
+            this.roll = roll;
+            this.name = name;
+            this.course = course;
+        }
+        f1() { // f1 will be part of prototype
+            console.log('I am f1 From student class')
+        }
+        f2 = function () {
+            console.log('I am f2 From student class')
+        }
+        f3 = () => {
+            console.log('I am f3 From student class')
+        }
+    }
+    Student.prototype.clgName = 'Eureka';
+    Student.prototype.f4 = function () {
+        console.log('I am f4 From student class')
+    }
+
+    let std1 = new Student(101, 'Bruhath', 'Angular');
+    let std2 = new Student(102, 'tejaswi', 'Java');
+    console.log(std1);
+    console.log(std2);
+
+</script>
