@@ -34,6 +34,7 @@ const orders = [
 
 
 5. Create leaderboard from game scores (highest score wins)
+each player’s highest score shuld be maintained
 const games = [
   { player: "Alice", score: 40 },
   { player: "Bob", score: 60 },
